@@ -2,7 +2,7 @@
 * Uber AI Lab : http://uber.ai 
 * Uber Engineering Blog : https://eng.uber.com
 
-# What is Horovod ? 
+# What is  . ? 
 * Horovod is a distributed training framework for TensorFlow. 
 * The goal of Horovod is to make distributed Deep Learning fast and easy to use.
 * Meet Horovod: Uber’s Open Source Distributed Deep Learning Framework for TensorFlow : https://eng.uber.com/horovod/
@@ -14,7 +14,8 @@
 * Pyro is a tool for deep probabilistic modeling, unifying the best of modern deep learning and Bayesian modeling. 
 * An intro to Probabilistic Programming with Ubers Pyro by Siraj Raval : https://youtu.be/ATaMq62fXno
 
-
+# Simple Model 
+* Read : http://pyro.ai/examples/intro_part_i.html#A-Simple-Model
 * Install pytorch : http://pytorch.org
 * Install pyro : http://pyro.ai  pip install pyro-ppl 
 
