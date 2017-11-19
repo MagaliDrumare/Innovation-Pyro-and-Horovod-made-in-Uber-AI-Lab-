@@ -15,7 +15,7 @@
 * How Bayes Theorem works? by Brandon Rohrer : https://youtu.be/5NMxiOGL39M
 * An intro to Probabilistic Programming with Ubers Pyro by Siraj Raval : https://youtu.be/ATaMq62fXno
 
-# Simple Model 
+## Simple Model 
 * Read : http://pyro.ai/examples/intro_part_i.html#A-Simple-Model
 * Install pytorch : http://pytorch.org
 * Install pyro : http://pyro.ai  pip install pyro-ppl 
@@ -77,7 +77,7 @@ print(geometric(Variable(torch.Tensor([0.5]))))
 
 ```
 
-# First run 
+## First run 
 
 ```python
 Variable containing:
