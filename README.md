@@ -18,7 +18,8 @@
 # Install pytorch : http://pytorch.org
 # Install pyro : http://pyro.ai  pip install pyro-ppl 
 
-# import some dependencies
+```python
+
 import torch
 from torch.autograd import Variable
 
@@ -27,7 +28,7 @@ import pyro.distributions as dist
 
 
 mu = Variable(torch.zeros(1))   # mean zero
-sigma = Variable(torch.ones(1)) # unit variance
+sigma = Variable(todependenciesrch.ones(1)) # unit variance
 x = dist.normal(mu, sigma)      # x is a sample from N(0,1)
 print(x)
 
@@ -63,10 +64,12 @@ def geometric(p, t=None):
         return x + geometric(p, t+1)
 
 print(geometric(Variable(torch.Tensor([0.5]))))
+
 ```
 
 # First run 
-```
+
+```python
 Variable containing:
 -0.5981
 [torch.FloatTensor of size 1]
@@ -85,10 +88,12 @@ Variable containing:
 Variable containing:
  0
 [torch.FloatTensor of size 1]
+
 ```
 
 # Second run 
-```
+
+```python 
 Variable containing:
 -0.3729
 [torch.FloatTensor of size 1]
