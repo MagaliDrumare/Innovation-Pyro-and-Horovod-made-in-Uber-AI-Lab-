@@ -12,6 +12,7 @@
 # What is Pyro ? 
 * Pyro probabilistic programming language : http://pyro.ai
 * Pyro is a tool for deep probabilistic modeling, unifying the best of modern deep learning and Bayesian modeling. 
+* How Bayes Theorem works? by Brandon Rohrer : https://youtu.be/5NMxiOGL39M
 * An intro to Probabilistic Programming with Ubers Pyro by Siraj Raval : https://youtu.be/ATaMq62fXno
 
 # Simple Model 
