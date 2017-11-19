@@ -94,9 +94,6 @@ Variable containing:
 ('sunny', 82.88794708251953)
 ('sunny', 76.23553466796875)
 ('sunny', 61.52381134033203)
-Variable containing:
- 0
-[torch.FloatTensor of size 1]
 
 ```
 
