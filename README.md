@@ -21,6 +21,11 @@
 
 ```python
 
+# we have a bunch of data with daily mean temperatures and cloud cover.
+# We want to reason about how temperature interacts with whether it was sunny or cloudy. 
+# This model defines a probabilistic model that we can reason about using the techniques of probability theory. 
+# For example we might ask: if I observe a temperature of 70 degrees, how likely is it to be cloudy? 
+
 import torch
 from torch.autograd import Variable
 
@@ -41,9 +46,12 @@ print(x)
 
 
 def weather():
+    #according to this model 30% of the time it’s cloudy and 70% of the time it’s sunny.
     cloudy = pyro.sample('cloudy', dist.bernoulli,
                          Variable(torch.Tensor([0.3])))
     cloudy = 'cloudy' if cloudy.data[0] == 1.0 else 'sunny'
+    
+    #mean temperature is 55 degrees (Fahrenheit) on cloudy days and 75 degrees on sunny days.
     mean_temp = {'cloudy': [55.0], 'sunny': [75.0]}[cloudy]
     sigma_temp = {'cloudy': [10.0], 'sunny': [15.0]}[cloudy]
     temp = pyro.sample('temp', dist.normal,
@@ -92,28 +100,6 @@ Variable containing:
 
 ```
 
-# Second run 
-
-```python 
-Variable containing:
--0.3729
-[torch.FloatTensor of size 1]
-
-Variable containing:
--0.9885
-[torch.FloatTensor of size 1]
-
-Variable containing:
--0.7046
-[torch.FloatTensor of size 1]
-
-('cloudy', 53.41917037963867)
-('sunny', 80.63172912597656)
-('sunny', 97.509033203125)
-Variable containing:
- 1
-[torch.FloatTensor of size 1]
-```
 
 
 
