@@ -14,9 +14,9 @@
 * Pyro is a tool for deep probabilistic modeling, unifying the best of modern deep learning and Bayesian modeling. 
 * An intro to Probabilistic Programming with Ubers Pyro by Siraj Raval : https://youtu.be/ATaMq62fXno
 
-# 
-# Install pytorch : http://pytorch.org
-# Install pyro : http://pyro.ai  pip install pyro-ppl 
+
+* Install pytorch : http://pytorch.org
+* Install pyro : http://pyro.ai  pip install pyro-ppl 
 
 ```python
 
